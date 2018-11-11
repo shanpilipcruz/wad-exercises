@@ -1,0 +1,38 @@
+.error
+{
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	border: 1px solid #a94442;
+	color: #a94442;
+	background: #f2dede;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.success
+{
+	width: 92%;
+	margin: 0px auto;
+	padding: 10px;
+	color: #3c763d;
+	background: #dff0d8;
+	border: 1px solid #3c763d;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#style
+{
+	width: 350px;
+	position: fixed;
+	top: 61px;
+	-webkit-transition: width 2s;
+	transition: all 0.9s;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#style.active
+{
+	margin-left: -350px;
+}
