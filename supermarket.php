@@ -1,5 +1,5 @@
 <?php
-	$db = mysqli_connect('127.0.0.1','root','','supermarket');
+	$db = mysqli_connect('127.0.0.1','root','','school_projects');
 ?>
 <div class="container" style="width: 100%;">
 	<center>
@@ -8,6 +8,7 @@
 			<p style="color: black;"><b>Grab your favorite sweets here at the Supermarket</b></p>
 			<a href="#" data-toggle="modal" data-target="#shoppingBag" class="btn btn-default">Shopping Bag</a>
 		</div>
+		<?php echo $_SESSION['message']; ?>
 	</center>
 <script type="text/javascript">
 	$(document).ready(function () {
@@ -25,7 +26,7 @@
 		<div class="panel-body">
 			<div class="supermarket">
 				<?php
-					$query = "SELECT * FROM products LIMIT 8";
+					$query = "SELECT * FROM supermarket LIMIT 8";
 					$result = mysqli_query($db, $query);
 
 					if(mysqli_num_rows($result) > 0)
@@ -48,6 +49,16 @@
 							</div>
 						<?php
 						}
+					} else {
+						?>
+							<center>
+								<div class="alert alert-danger" role="alert">
+									<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+									<span class="sr-only">Error:</span>
+									There are no products to be Displayed!
+								</div>
+							</center>
+						<?php
 					}
 				?>
 			</div>

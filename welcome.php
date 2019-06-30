@@ -15,6 +15,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="responsive.css"> -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="ajax.js"></script>
@@ -22,7 +23,6 @@
  	<link rel="stylesheet" type="text/css" href="styles.css">
  	<link rel="stylesheet" type="text/css" href="sidebar_styles.css">
 </head>
-<?php include('update_user.php'); ?>
 <?= $_SESSION['message'] ?>
 <body background="img/bg.jpg">
             <!-- Sidebar Holder -->
@@ -47,7 +47,7 @@
                     <li style="color: white;"><b>Student Number:</b> <?php echo $_SESSION['snum']; ?></li>
                     <li style="color: white;"><b>Rights:</b> <?php echo $_SESSION['role']; ?></li>
                 </ul>
-				<p class="pull-left" style="color: white;">Do you want changes into your profile?&nbsp;<a href="#" data-target="#devModal" data-toggle="modal" data-dismiss="modal">Edit</a></p>
+				<p class="pull-left" style="color: white;">Do you want changes into your profile?&nbsp;<a href="update_user.php">Edit</a></p>
             </nav>
         <!-- jQuery Custom Scroller CDN -->
         <script src="bootstrap-3.3.7-dist/js/jquery.mCustomScrollbar.concat.min.js"></script>

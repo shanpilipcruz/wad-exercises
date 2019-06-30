@@ -1,9 +1,9 @@
 <?php
 	session_start();
 	$user_data = $query = $result = "";
-	$con = mysqli_connect('localhost','root','','accounts');
+	$con = mysqli_connect('localhost','root','','school_projects');
 
-	$query = "SELECT * FROM user_accounts WHERE id='1'";
+	$query = "SELECT * FROM accounts WHERE id='1'";
 	$result = mysqli_query($con, $query);
 
 	session_regenerate_id();
@@ -20,16 +20,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wad Exercises 2k17-2k18</title>
+	<title>Practice Temp</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 	<link rel="stylesheet" type="text/css" href="Bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<script type="text/javascript" src="Bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
-	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="ajax.js"></script>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body background="img/bg.jpg">
@@ -46,17 +42,17 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a href="index.php" class="navbar-brand" title="Refresh the website">Web Application Design 2 Exercises 2017-2018</a>
+	            <a href="index.php" class="navbar-brand" title="Refresh the website">Practice Temp</a>
 	        </div>
 	        <!-- Collection of nav links and other content for toggling -->
 	        <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
 	            <ul class="nav navbar-nav">
-	                <li class="active"><a href="index.php" title="Back to the homepage or refresh the website">Home</a></li>
+	                <li><a href="/websites/wad-exercises/" title="Back to the homepage or refresh the website">Home</a></li>
 	                <li class="dropdown">
 	                	<a href="" class="dropdown-toggle" data-toggle="dropdown" title="Check all available exercises">Exercises<b class="caret"></b></a>
 	                	<ul class="dropdown-menu">
-			                <li><a href="index.php?exer=exercise1"">Exercise 1</a></li>
-			                <li><a href="index.php?exer=exercise2"">Exercise 2</a></li>
+			                <li><a href="index.php?exer=exercise1">Exercise 1</a></li>
+			                <li><a href="index.php?exer=exercise2">Exercise 2</a></li>
 			                <li><a href="" data-toggle="modal" data-target="#lockedModal">Exercise 3</a></li>
 			                <li><a href="" data-toggle="modal" data-target="#lockedModal">Exercise 4</a></li>
 			                <li><a href="" data-toggle="modal" data-target="#lockedModal">Exercise 5</a></li>
@@ -112,6 +108,9 @@
 		});
 	});
 </script>
-
+<script type="text/javascript" src="Bootstrap-3.3.7-dist/js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="ajax.js"></script>
 </body>
 </html>

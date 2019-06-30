@@ -17,7 +17,7 @@
 					<p>Click Options for more</p>
 					<a href="" data-target="#optionModal" data-toggle="modal" class="btn btn-primary">Options</a><br>
 					<br>
-					<a href="index.php" class="btn btn-default">Exercises</a>
+					<a href="/websites/wad-exercises/" class="btn btn-default">Exercises</a>
 					<a href="" class="btn btn-default" data-toggle="modal" data-target="#lockedModal">Zodiac Sign</a>  
 				</div>
 		</div>

@@ -10,7 +10,7 @@
 	                <span class="icon-bar"></span>
 	                <span class="icon-bar"></span>
 	            </button>
-	            <a href="welcome.php" class="navbar-brand">Web Application Design 2 Exercises 2017-2018</a>
+	            <a href="welcome.php" class="navbar-brand">Practice Temp</a>
 	        </div>
 	        <!-- Collection of nav links and other content for toggling -->
 	        <div id="navbarCollapse" class="collapse navbar-collapse">
@@ -31,7 +31,7 @@
 	                <li class="dropdown">
 	                	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><b class="caret"></b></a>
 	                	<ul class="dropdown-menu">
-	                		<li><a href="#" id="sidebarCollapse">User Profile</a></li>
+	                		<li><a href="update_user.php">User Profile</a></li>
 	                		<li><a href="logout.php">Logout</a></li>
 	                	</ul>
 	                </li>
@@ -42,8 +42,8 @@
 <!-- END OF NAVBAR -->
 <div class="container-fluid">
 	<div class="row">
-		<div class="col-md-2">
-			<div class="panel panel-primary" style="width: 262px;">
+		<div class="col-md-3">
+			<div class="panel panel-primary">
 				<a href="#" data-toggle="modal" data-target="#profileModal">
 					<div class="panel-body" style="background-color: #fff;">
 						<div class="row">
@@ -57,7 +57,7 @@
 					</div>
 				</a>
 			</div>
-			<div class="panel panel-default" style="background-color: #222; width: 262px;">
+			<div class="panel panel-default" style="background-color: #222;">
 				<br>
 					<center>
 						<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Activities
@@ -79,7 +79,7 @@
 					</center>
 				<br>
 			</div>
-			<div class="panel panel-default" style="background-color: #222; width: 262px;">
+			<div class="panel panel-default" style="background-color: #222;">
 				<br>
 					<center>
 						<a href="welcome.php?page=supermarket">Supermarket</a>
@@ -87,7 +87,7 @@
 				<br>
 			</div>
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-9">
 			<?php include('errors.php'); ?>
 				    <?php
 				        if(isset($_GET['page']))
@@ -102,4 +102,5 @@
 				        }
 				    ?>
 		</div>
+	</div>
 </div>

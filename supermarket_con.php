@@ -1,5 +1,5 @@
 <?php
-	$sm = mysqli_connect('localhost','root','','supermarket');
+	$sm = mysqli_connect('localhost','root','','school_projects');
 	$item_name = $item_price = $item_image = "";
 	$_SESSION['message'] = '';
 
@@ -21,17 +21,19 @@
 
 		if(count($errors) == 0)
 		{
-			$sql = "INSERT INTO products (p_name, image, price) VALUES ('$item_name','$item_image','$item_price')";
+			$sql = "INSERT INTO supermarket (p_name, image, price) VALUES ('$item_name','$item_image','$item_price')";
 
 			$save = mysqli_query($sm, $sql);
 			if($save == true)
 			{
-				$_SESSION['message'] = '<div class="success">Item successfully added to the database!</div>';
+				$_SESSION['message'] = '<div class="alert alert-success">Item successfully added to the database!</div>';
 			}
 			else
 			{
-				$_SESSION['message'] = '<div class="failed">Failed to add item to the database!</div>';
+				$_SESSION['message'] = '<div class="alert alert-danger">Failed to add item to the database!</div>';
 			}
+		} else {
+			$_SESSION['message'] = '<div class="alert alert-danger">Failed to add item to the database!</div>';
 		}
 	}
 ?>

@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$con = mysqli_connect('localhost','root','1234','supermarket');
+	$con = mysqli_connect('localhost','root','','school_projects');
 	if(isset($_POST["add"]))
 	{
 		if(isset($_SESSION["cart"]))
@@ -20,7 +20,8 @@
 			}
 			else
 			{
-				echo '<script>alert("Products already added to cart")</script>';
+				//echo '<script>alert("Products already added to cart")</script>';
+				echo $_SESSION['message'] = "<div class='alert alert-warning alert-dismissible' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong>Warning!</strong> Better check yourself, you're not looking too good.</div>";
 				echo '<script>window.location="welcome.php?page=supermarket"</script>';
 			}
 		}

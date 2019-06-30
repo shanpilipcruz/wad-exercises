@@ -1,5 +1,5 @@
 <?php
-	$update_con = mysqli_connect('localhost','root','','supermarket');
+	$update_con = mysqli_connect('localhost','root','','school_projects');
 
 	if(isset($_POST['update_product']))
 	{
@@ -16,7 +16,7 @@
 			array_push($errors, 'Product price must be specified!');
 		}
 
-		$verifyquery = mysqli_query($update_con, "UPDATE products SET p_name='$name', price='$price' WHERE id='$id'");
+		$verifyquery = mysqli_query($update_con, "UPDATE supermarket SET p_name='$name', price='$price' WHERE id='$id'");
 
 		if($verifyquery == true)
 		{

@@ -32,7 +32,7 @@
 						</center>
 					</div>
 					<div class="panel-footer" style="height: 50px;">
-						<p class="pull-left">Do you want changes into your profile?&nbsp;<a href="#" data-target="#devModal" data-toggle="modal" data-dismiss="modal" style="color: blue;">Edit</a></p>
+						<p class="pull-left">Do you want changes into your profile?&nbsp;<a href="update_user.php" style="color: blue;">Edit</a></p>
 						<button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
 					</div>
 					</div>
@@ -420,3 +420,47 @@
 </div>
 
 <!-- END -->
+
+<!-- CHANGE PASSWORD MODAL -->
+<div id="changePassword" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="modal-title">Change Password</h3>
+			</div>
+			<div class="panel-body">
+				<form method="POST">
+					
+				</form>
+			</div>
+			<div class="panel-footer">
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END -->
+
+<div id="cropImageModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+      		<div class="modal-header">
+        		<button type="button" class="close" data-dismiss="modal">&times;</button>
+        		<h4 class="modal-title">Upload & Crop Image</h4>
+      		</div>
+      		<div class="modal-body">
+        		<div class="row">
+  					<div class="col-md-8 text-center">
+						  <div id="imageDemo" style="width:350px; margin-top:30px"></div>
+  					</div>
+  					<div class="col-md-4" style="padding-top:80px;">
+						<button class="btn btn-success crop_image">Crop & Upload Image</button>
+					</div>
+				</div>
+      		</div>
+      		<div class="modal-footer">
+        		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      		</div>
+    	</div>
+    </div>
+</div>
