@@ -1,2 +1,5 @@
 # firstweb
-My First Web Project for my WAD 2
+
+First Web Application Design project with Profile Management.
+  - Improvements of website is welcome.
+  - Adding of Functionality is also considered.
